@@ -15,4 +15,4 @@ It calculates next movement in 5 second when tree depth is lower than 6 at begin
 It calculates next movement in 5 second when tree depth is lower than 7 at endings of the game  
 
 
-![alt text](resource/chess_game_ss1.png)
+![alt text](resource/chess_ss1.png)
