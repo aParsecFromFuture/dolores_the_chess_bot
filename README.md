@@ -1,6 +1,6 @@
 # dolores_the_chess_bot
 
-It is a improved version of my latest ches engine, you can find it among my repositories
+It is a improved version of my latest chess engine, you can find it among my repositories
 
 WHAT'S NEW?  
 1.Thread count is increased 1 to 16 (Multithread approach)  
