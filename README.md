@@ -3,7 +3,7 @@
 It is a improved version of my latest chess engine, you can find it among my repositories
 
 WHAT'S NEW?  
-1.Thread count is increased 1 to 16 (Multithread approach)  
+1.Thread count is increased from 1 to 16 (Multithread approach)  
 2.Now everything is a lookup table!  
 3.All the data structures converted to 1D array, even the chess board.  
 4.Much lesser and readable codes! Line count is decreased from 750 to 400  
