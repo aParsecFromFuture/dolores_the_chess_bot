@@ -14,4 +14,4 @@ Uses minimax and alpha-beta pruning algorithms
 It calculates next movement in 5 second when tree depth is lower than 6 at beginning and middle of the game  
 It calculates next movement in 5 second when tree depth is lower than 7 at endings of the game  
 
-
+![alt text](resource/chess_ss1.png)
