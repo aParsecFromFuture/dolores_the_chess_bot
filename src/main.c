@@ -1,6 +1,6 @@
 #include <gtk/gtk.h>
 #include <cairo.h>
-#include "chess.h"
+#include "../include/chess.h"
 
 GtkBuilder *builder;
 GtkWidget *window, *draw_area, *switch_label, *history_table;
@@ -21,7 +21,7 @@ int main(int argc, char **argv)
     
     chess_load();
     
-    builder = gtk_builder_new_from_file("main.glade");
+    builder = gtk_builder_new_from_file("ui/main.glade");
     window = GTK_WIDGET(gtk_builder_get_object(builder, "window"));
     draw_area = GTK_WIDGET(gtk_builder_get_object(builder, "draw_area"));
     switch_label = GTK_WIDGET(gtk_builder_get_object(builder, "switch_label"));
@@ -33,18 +33,18 @@ int main(int argc, char **argv)
     gtk_builder_connect_signals(builder, 0);
     
     icon[0] = 0;
-    icon[1] = cairo_image_surface_create_from_png("../resource/w_pawn.png");
-    icon[2] = cairo_image_surface_create_from_png("../resource/w_knight.png");
-    icon[3] = cairo_image_surface_create_from_png("../resource/w_bishop.png");
-    icon[4] = cairo_image_surface_create_from_png("../resource/w_rook.png");
-    icon[5] = cairo_image_surface_create_from_png("../resource/w_queen.png");
-    icon[6] = cairo_image_surface_create_from_png("../resource/w_king.png");
-    icon[7] = cairo_image_surface_create_from_png("../resource/b_pawn.png");
-    icon[8] = cairo_image_surface_create_from_png("../resource/b_knight.png");
-    icon[9] = cairo_image_surface_create_from_png("../resource/b_bishop.png");
-    icon[10] = cairo_image_surface_create_from_png("../resource/b_rook.png");
-    icon[11] = cairo_image_surface_create_from_png("../resource/b_queen.png");
-    icon[12] = cairo_image_surface_create_from_png("../resource/b_king.png");
+    icon[1] = cairo_image_surface_create_from_png("resource/w_pawn.png");
+    icon[2] = cairo_image_surface_create_from_png("resource/w_knight.png");
+    icon[3] = cairo_image_surface_create_from_png("resource/w_bishop.png");
+    icon[4] = cairo_image_surface_create_from_png("resource/w_rook.png");
+    icon[5] = cairo_image_surface_create_from_png("resource/w_queen.png");
+    icon[6] = cairo_image_surface_create_from_png("resource/w_king.png");
+    icon[7] = cairo_image_surface_create_from_png("resource/b_pawn.png");
+    icon[8] = cairo_image_surface_create_from_png("resource/b_knight.png");
+    icon[9] = cairo_image_surface_create_from_png("resource/b_bishop.png");
+    icon[10] = cairo_image_surface_create_from_png("resource/b_rook.png");
+    icon[11] = cairo_image_surface_create_from_png("resource/b_queen.png");
+    icon[12] = cairo_image_surface_create_from_png("resource/b_king.png");
     
     chess_init(BOARD);
     

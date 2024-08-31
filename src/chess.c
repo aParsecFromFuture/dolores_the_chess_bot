@@ -1,4 +1,4 @@
-#include "chess.h"
+#include "../include/chess.h"
 
 chess_board BOARD;
 pthread_t THREAD_ID[64];
@@ -129,19 +129,19 @@ void chess_load()
     
     for(i = 0; i < 56; i++) iterate[i] = i - (i % 7) + 7;
 	
-	fp = fopen("../eval.txt", "r");
+	fp = fopen("lookup/eval.txt", "r");
     if(fp){
         for(i = 0; i < 832; i++) fscanf(fp, "%hd", &eval[i]);
         fclose(fp);
     }
 
-	fp = fopen("../movement.txt", "r");
+	fp = fopen("lookup/movement.txt", "r");
     if(fp){
         for(i = 0; i < 268; i++) fscanf(fp, "%d", &movement[i]);
         fclose(fp);
     }
 
-	fp = fopen("../legal.txt", "r");
+	fp = fopen("lookup/legal.txt", "r");
     if(fp){
         for(i = 0; i < 17152; i++) fscanf(fp, "%hd", &legal[i]);
         fclose(fp);
